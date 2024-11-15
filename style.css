@@ -1,0 +1,126 @@
+body{
+    font-family: sans-serif;
+    background: rgb(222, 222, 222);
+    font-optical-sizing: auto;
+}
+
+img{
+    max-width: 100%;
+    height:auto;
+}
+
+h1{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 40px;
+}
+
+h2,h3,h4{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+
+}
+
+p{
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+}
+
+a:visited
+{
+    color: rgb(86, 72, 66);
+    font-weight:normal;
+}
+
+.header{
+    /*background: rgb(193, 193, 193);*/
+    display: grid;
+    grid-template-columns: max-content max-content;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 30px;
+    border-bottom: 3px solid black;
+    padding: 0px;
+    /*border-radius: 25px;*/
+}
+
+.projet-large{
+    grid-column: span 2;
+    grid-row: span 2;
+    column-gap: 5px;
+}
+
+.plein{
+    grid-column: span 3;
+}
+
+.nav{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 15px;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+header-title{
+    margin: 0;  
+}
+
+/*..header-nav{
+    background: rgb(193, 193, 193);
+}*/
+
+.index .grid{
+    max-width: 1900px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: minmax(1fr 1fr 1fr);
+    justify-content: center;
+    justify-items: center;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-auto-flow: row dense;
+    align-items: center;
+}
+
+/*Transaparence texte sur image*/
+.item{
+    display:grid;
+    height: fit-content;
+    width: fit-content;
+    background: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.item>*{
+   grid-column: 1;
+   grid-row: 1;
+   justify-self: center;
+    align-self: center;
+    color: rgb(255, 255, 255);
+   transition: 0.8s;
+   justify-content: center;
+ }
+
+.item h2{
+    font-size: 20px;
+    opacity: 0;
+}
+
+.item:hover img{
+    opacity: 0;
+}
+
+.item:hover h2{
+    opacity: 1;
+}
+
+/*Adaptation*/
