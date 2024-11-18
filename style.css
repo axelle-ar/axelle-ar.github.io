@@ -86,8 +86,10 @@ a:visited
 header-title{
     margin: 0;  
 }
+
+
 .index .grid2{
-    max-width: auto;
+    max-width: 1300px;
     display: grid;
     margin: 0 auto;
     grid-template-columns: 1fr 1fr;
@@ -101,14 +103,14 @@ header-title{
 
 
 .index .grid{
-    max-width: 1550px;
+    max-width: 1350px;
     display: grid;
     margin: 0 auto;
     grid-template-columns: minmax(1fr 1fr 1fr);
     justify-content: center;
     justify-items: center;
     column-gap: 10px;
-    row-gap: 15px;
+    row-gap: 10px;
     grid-auto-flow: row dense;
     align-items: center;
 }
