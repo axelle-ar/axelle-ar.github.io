@@ -4,6 +4,13 @@ body{
     font-optical-sizing: auto;
 }
 
+.logo{
+    display: grid;
+    grid-template-columns: max-content max-content;
+    gap: 10px;
+    align-items: center;
+}
+
 img{
     max-width: 100%;
     height:auto;
@@ -14,15 +21,23 @@ h1{
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
-    font-size: 40px;
+    font-size: 60px;
 }
 
-h2,h3,h4{
+h2{
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
+    font-size: 40px;
+    margin-bottom: -20px;
+}
 
+h3,h4{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 
 p{
@@ -88,13 +103,12 @@ header-title{
 }
 
 
+
 .index .grid2{
     max-width: 1300px;
     display: grid;
     margin: 0 auto;
     grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    justify-items: center;
     column-gap: 10px;
     row-gap: 10px;
     grid-auto-flow: row dense;
@@ -116,12 +130,6 @@ header-title{
 }
 
 /*Adaptation*/
-@media (min-width: 798px){
-    .index .grid {
-        grid-template-columns: repeat(2, minmax(320,1fr));
-        font-size: 15px;
-    }
-}
 
 @media (min-width: 1280px){
     .index .grid {
