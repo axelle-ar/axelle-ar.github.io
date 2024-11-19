@@ -188,3 +188,14 @@ header-title{
     grid-auto-flow: row dense;
     align-items: center;
 }
+
+.about{
+    max-width: auto;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-auto-flow: row dense;
+    align-items: center;
+}
