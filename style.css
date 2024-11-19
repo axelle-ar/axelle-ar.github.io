@@ -181,6 +181,11 @@ header-title{
     opacity: 1;
 }
 
+@media (min-width: 640px){
+    .item{
+        font-size: 10px;
+    }
+}
 
 .footer{
     font-size: 12px;
@@ -198,11 +203,11 @@ header-title{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     column-gap: 10px;
     row-gap: 10px;
-    grid-auto-flow: row dense;
     align-items: center;
 }
 
-.about{
+
+/*.about{
     max-width: auto;
     display: grid;
     margin: 0 auto;
